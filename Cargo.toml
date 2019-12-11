@@ -1,0 +1,14 @@
+[package]
+name = "biboy"
+version = "0.1.0"
+authors = ["Yushi Omote <yushiomote@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+x86_64 = "0.8.1"
+linked_list_allocator = "0.6"
+log = { version = "0.4", default-features = false }
+rand = { version = "0.6", default-features = false }
+rgy = { git = "https://github.com/YushiOMOTE/gbr.git" }
+bootloader = { path = "ext/bootloader", features = ["map_physical_memory", "recursive_page_table"] }
+comlog = { git = "https://github.com/YushiOMOTE/comlog.git" }
